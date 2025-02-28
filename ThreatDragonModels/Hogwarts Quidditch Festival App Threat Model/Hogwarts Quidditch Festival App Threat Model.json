@@ -1849,102 +1849,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Vendor Data",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "VIP Data & Status Verification",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "f2a29596-bbd6-47d5-8397-75d11a18e1fe",
-                  "title": "Tampered VIP Data",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Attackers may tamper with VIP data during transmission from VIP Access to Database, allowing unauthorized modifications or fraud, violating MMRs.",
-                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit with HTTPS, and monitor data flows for anomalies.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 34,
-                  "score": "7"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
-            "source": {
-              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "target": {
-              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -2898,6 +2802,125 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VIP Data & Status Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f2a29596-bbd6-47d5-8397-75d11a18e1fe",
+                  "title": "Tampered VIP Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers may tamper with VIP data during transmission from VIP Access to Database, allowing unauthorized modifications or fraud, violating MMRs.",
+                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit with HTTPS, and monitor data flows for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": "7"
+                },
+                {
+                  "id": "c4bc8e0b-8ec7-4e28-9d70-47bd03892ad1",
+                  "title": "Intercepted Status Verification",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept VIP status verification data during transmission from Database to VIP Access, exposing premium access details and violating MMRs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
+            "source": {
+              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
+            },
+            "vertices": [
+              {
+                "x": 1320,
+                "y": 550
+              },
+              {
+                "x": 1200,
+                "y": 530
+              }
+            ]
+          },
+          {
             "position": {
               "x": 260,
               "y": 70
@@ -3438,6 +3461,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 39
+    "threatTop": 40
   }
 }
