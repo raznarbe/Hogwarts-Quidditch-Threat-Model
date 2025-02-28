@@ -93,6 +93,58 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1795,
+              "y": 275
+            },
+            "size": {
+              "width": 220,
+              "height": 180
+            },
+            "attrs": {
+              "label": {
+                "text": ""
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "29af2c48-9b2c-4b7f-9979-1d905e5b740d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 274.9999999999999
+            },
+            "size": {
+              "width": 210,
+              "height": 200
+            },
+            "attrs": {
+              "label": {
+                "text": ""
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "b4d04c67-c736-4ebe-8272-2bda116dad16",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
             "tools": {
               "items": [
