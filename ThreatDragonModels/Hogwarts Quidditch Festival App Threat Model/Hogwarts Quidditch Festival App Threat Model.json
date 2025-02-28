@@ -1553,83 +1553,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Check-In Verification",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d663d28c-56e8-4b78-a620-5c1425dbf833",
-            "source": {
-              "cell": "2745969e-9831-4ed2-bfef-2e01fb29ea89",
-              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
-            },
-            "target": {
-              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Ad Display/Ap Ads",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Ad Display/Ap Ads",
               "description": "",
               "outOfScope": false,
@@ -1759,17 +1682,84 @@
               "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
               "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Ad Display/Ap Ads",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Check-In Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d663d28c-56e8-4b78-a620-5c1425dbf833",
+            "source": {
+              "cell": "2745969e-9831-4ed2-bfef-2e01fb29ea89",
+              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
+            },
+            "target": {
+              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -1919,8 +1909,8 @@
                 "text": "Security Agencies"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2016,9 +2006,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6dd7614f-dae4-49f3-bdf4-fc2b9882947e",
+                  "title": "Fake Check-Ins",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attackers may spoof check-in data or impersonate Security Agencies to allow unauthorized event access, violating MMRs and risking security breaches.",
+                  "mitigation": "Use secure authentication (e.g., magical tokens, MFA), real-time validation, and logs for check-in data to prevent spoofing.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2035,8 +2043,8 @@
                 "text": "External Data Providers"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2132,9 +2140,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c0071d2a-f58a-479c-8653-3d572256b947",
+                  "title": "Impersonation of Data Provider",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attackers may impersonate External Data Providers by spoofing API calls to alter event, team, or vendor data, disrupting festival operations and violating MMRs.",
+                  "mitigation": "Authenticate API calls with strong keys, use HTTPS for data exchange, and monitor API usage for anomalies to prevent impersonation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2266,7 +2299,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 5,
                 "repudiation": 0
               }
             }
@@ -2276,6 +2309,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 11
   }
 }
