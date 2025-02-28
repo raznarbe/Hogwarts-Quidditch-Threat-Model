@@ -1,0 +1,16 @@
+{
+  "version": "2.3.0",
+  "summary": {
+    "title": "Hogwarts Quidditch Festival App Threat Model",
+    "owner": "raznarbe",
+    "description": "This threat model covers the mobile app for the Hogwarts Quidditch Olympic Festival, used for fan engagement, scheduling, ticket purchasing, event check-in, VIP access, community features, vendor information, and sponsor advertising. It includes connections to third-parties like payment systems, security agencies, and external data providers, with a focus on ensuring compliance with Magic & Mystics Regulations (MMRs) for data privacy and security.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
