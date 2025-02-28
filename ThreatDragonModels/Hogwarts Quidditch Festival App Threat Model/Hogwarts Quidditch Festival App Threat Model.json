@@ -723,6 +723,19 @@
                   "new": false,
                   "number": 15,
                   "score": "8"
+                },
+                {
+                  "id": "771a5e31-bfd9-4ea0-a8b5-d999387dcd78",
+                  "title": "Unauthorized VIP Data Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers may gain unauthorized access to VIP data in the Database from VIP Access, allowing premium features without payment and violating MMRs.",
+                  "mitigation": "Restrict access with strong authentication, role checks, and physical/magical tokens. Encrypt VIP data and monitor access logs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": "8"
                 }
               ],
               "threatFrequency": {
@@ -731,7 +744,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -1182,6 +1195,19 @@
                   "new": false,
                   "number": 23,
                   "score": "4"
+                },
+                {
+                  "id": "8b6219bc-bf66-4e4e-aaa2-12e6c4a05483",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 32,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1223,7 +1249,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1313,7 +1339,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1390,7 +1416,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1449,82 +1475,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Ticket Data",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "VIP Data & Status Verification",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
-            "source": {
-              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "target": {
-              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1553,7 +1503,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1655,7 +1605,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1752,7 +1702,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1849,7 +1799,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1959,7 +1909,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2065,7 +2015,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2162,7 +2112,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ticket Data",
+                    "text": "Schedule Update",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2231,6 +2181,284 @@
                 "y": 610
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Attendence Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5a8945df-0157-4723-8ffd-75b02f19d77d",
+                  "title": "Denial of Attendance Logging",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers may launch a denial-of-service attack, preventing attendance data from being logged in the Database during Event Check-In, disrupting festival operations.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure attendance logging availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "f2364edc-fddd-4488-9d05-c3d5c40e71cf",
+            "source": {
+              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+            },
+            "vertices": [
+              {
+                "x": 780,
+                "y": 530
+              },
+              {
+                "x": 810,
+                "y": 645
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Schedule Update",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "07c0a792-21aa-4148-ac50-71c58e7572b4",
+                  "title": "Disrupted Schedule Updates",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers may disrupt schedule updates in the Database from Live Schedule, preventing real-time updates and confusing attendees.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure schedule update availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "4e89392e-b2d5-4888-aafe-fce889ef5f1e",
+            "source": {
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VIP Data & Status Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
+            "source": {
+              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
+            }
           },
           {
             "position": {
@@ -2368,8 +2596,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": 610
+              "x": 250,
+              "y": 90
             },
             "size": {
               "width": 130,
@@ -2773,6 +3001,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 27
+    "threatTop": 33
   }
 }
