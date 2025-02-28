@@ -175,8 +175,8 @@
           },
           {
             "position": {
-              "x": 1880,
-              "y": 65
+              "x": 1955,
+              "y": 45
             },
             "size": {
               "width": 180,
@@ -1207,8 +1207,8 @@
           },
           {
             "position": {
-              "x": 1870,
-              "y": 90
+              "x": 1945,
+              "y": 70
             },
             "size": {
               "width": 200,
@@ -1549,7 +1549,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1646,298 +1646,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Event Details",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "eb8cbfa3-e6ce-4719-88ed-e43c52aa6eb3",
-                  "title": "Intercepted Event Data",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Attackers may intercept event details during transmission from External Data Providers to Live Schedule, risking data breaches and MMR violations.",
-                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 18,
-                  "score": "7"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "0a971dc1-3263-47f4-a20a-1dcec0321f4a",
-            "source": {
-              "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
-              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
-            },
-            "target": {
-              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "1640fb7a-1cf4-48bc-a3d4-b5317a45d777"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Ad Display/Ap Ads",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "4eac63fb-1390-407d-946c-0ab9c9a9a1de",
-                  "title": "Malicious Ad Exposure",
-                  "status": "Open",
-                  "severity": "TBA",
-                  "type": "Information disclosure",
-                  "description": "Attackers may inject malicious ads via Sponsor Advertising, exposing attendees to malware or phishing through the Browser/App, violating MMRs.",
-                  "mitigation": "Validate ad content before display, use secure ad servers, and monitor ad traffic for anomalies.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 25,
-                  "score": "6"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "55f46677-2c22-4768-971f-d82cfadf06d2",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
-            },
-            "target": {
-              "cell": "83054582-530f-4220-bee0-c675420bccc2",
-              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Vendor Data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "69cf7bcc-d998-4f4f-bf5f-1d0ab51e7e1d",
-                  "title": "Intercepted Vendor Data",
-                  "status": "Open",
-                  "severity": "TBA",
-                  "type": "Information disclosure",
-                  "description": "Attackers may intercept vendor data during transmission from External Data Providers to Vendor Information, risking data breaches and MMR violations.",
-                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 19,
-                  "score": "7"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "c3f2ce5c-21cb-4123-97ae-1741dfe31fd5",
-            "source": {
-              "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
-              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
-            },
-            "target": {
-              "cell": "ed7cf80d-7b43-4d14-886f-24fa0c6182d2",
-              "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2034,7 +1743,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2097,7 +1806,16 @@
               "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
               "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 280,
+                "y": 280
+              },
+              {
+                "x": 350,
+                "y": 370
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2131,7 +1849,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2227,7 +1945,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2324,7 +2042,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2420,7 +2138,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2517,7 +2235,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2614,7 +2332,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2677,7 +2395,16 @@
               "cell": "95060f6c-8e49-4617-b55d-82f620bd7586",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1500,
+                "y": 140
+              },
+              {
+                "x": 1830,
+                "y": 200
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2711,7 +2438,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Schedule Update",
+                    "text": "Vendor Data",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -2775,6 +2502,333 @@
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ad Display/Ap Ads",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "4eac63fb-1390-407d-946c-0ab9c9a9a1de",
+                  "title": "Malicious Ad Exposure",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Attackers may inject malicious ads via Sponsor Advertising, exposing attendees to malware or phishing through the Browser/App, violating MMRs.",
+                  "mitigation": "Validate ad content before display, use secure ad servers, and monitor ad traffic for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "55f46677-2c22-4768-971f-d82cfadf06d2",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
+            },
+            "target": {
+              "cell": "83054582-530f-4220-bee0-c675420bccc2",
+              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
+            },
+            "vertices": [
+              {
+                "x": 1460,
+                "y": 30
+              },
+              {
+                "x": 1700,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Event Details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "eb8cbfa3-e6ce-4719-88ed-e43c52aa6eb3",
+                  "title": "Intercepted Event Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept event details during transmission from External Data Providers to Live Schedule, risking data breaches and MMR violations.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "0a971dc1-3263-47f4-a20a-1dcec0321f4a",
+            "source": {
+              "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
+              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
+            },
+            "target": {
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "vertices": [
+              {
+                "x": 1630,
+                "y": 600
+              },
+              {
+                "x": 1730,
+                "y": 510
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Vendor Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "fa66c95e-0b45-432e-9842-966003f7f3ea",
+                  "title": "Tampered Vendor Data",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers may tamper with vendor data in storage, affecting festival operations and sponsor trust.",
+                  "mitigation": "Use digital signatures, audit logs for changes, and encrypt data at rest to prevent tampering.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": "6"
+                },
+                {
+                  "id": "6f947900-84d3-4605-b1f5-bbecd3763399",
+                  "title": "Intercepted Vendor Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept vendor data during transmission from External Data Providers to Vendor Information, risking data breaches and MMR violations.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "7a6ca40a-b050-4111-8821-f9da2dc3c695",
+            "source": {
+              "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
+              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
+            },
+            "target": {
+              "cell": "ed7cf80d-7b43-4d14-886f-24fa0c6182d2",
+              "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
+            },
+            "vertices": [
+              {
+                "x": 1910,
+                "y": 585
+              }
+            ]
           },
           {
             "position": {
@@ -3317,6 +3371,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 37
+    "threatTop": 39
   }
 }
