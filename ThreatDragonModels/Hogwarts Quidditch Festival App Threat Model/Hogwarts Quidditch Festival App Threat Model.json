@@ -860,18 +860,24 @@
               "threats": [
                 {
                   "id": "a86932fe-6402-4835-b4cc-ca9ed5eecf20",
-                  "title": "New STRIDE threat",
+                  "title": "Tampered Vendor Data",
                   "status": "Open",
-                  "severity": "TBA",
+                  "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Attackers may tamper with vendor data in storage, affecting festival operations and sponsor trust.",
+                  "mitigation": "Use digital signatures, audit logs for changes, and encrypt data at rest to prevent tampering.",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 9,
-                  "score": ""
+                  "score": "6"
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1003,16 +1009,36 @@
                   "new": false,
                   "number": 16,
                   "score": "4"
+                },
+                {
+                  "id": "c5196361-8baf-45a9-a495-ae12ca5c6f38",
+                  "title": "Malicious Ad Injection",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Attackers may inject malicious ads into Sponsor Advertising, compromising attendee devices or spreading malware, violating MMRs.",
+                  "mitigation": "Validate ad content before display, use secure ad servers, and monitor ad traffic for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "6"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1158,13 +1184,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2492,6 +2511,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 21
   }
 }
