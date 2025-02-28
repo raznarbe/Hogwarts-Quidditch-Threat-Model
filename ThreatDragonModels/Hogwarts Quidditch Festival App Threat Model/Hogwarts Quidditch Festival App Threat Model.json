@@ -2224,7 +2224,13 @@
             "target": {
               "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
               "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
-            }
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 610
+              }
+            ]
           },
           {
             "position": {
