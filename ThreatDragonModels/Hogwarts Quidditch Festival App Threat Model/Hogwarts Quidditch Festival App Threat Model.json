@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 1045,
+              "x": 1600,
               "y": 325
             },
             "size": {
@@ -160,8 +160,8 @@
           },
           {
             "position": {
-              "x": 380,
-              "y": 340
+              "x": 460,
+              "y": 350
             },
             "size": {
               "width": 140,
@@ -301,8 +301,8 @@
           },
           {
             "position": {
-              "x": 1270,
-              "y": 325
+              "x": 670,
+              "y": 310
             },
             "size": {
               "width": 160,
@@ -442,8 +442,8 @@
           },
           {
             "position": {
-              "x": 770,
-              "y": 340
+              "x": 1240,
+              "y": 350
             },
             "size": {
               "width": 160,
@@ -596,8 +596,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 335
+              "x": 930,
+              "y": 250
             },
             "size": {
               "width": 140,
@@ -902,8 +902,8 @@
           },
           {
             "position": {
-              "x": 1590,
-              "y": 330
+              "x": 1740,
+              "y": 180
             },
             "size": {
               "width": 200,
@@ -1056,8 +1056,8 @@
           },
           {
             "position": {
-              "x": 560,
-              "y": 600
+              "x": 920,
+              "y": 650
             },
             "size": {
               "width": 160,
@@ -1454,16 +1454,17 @@
               "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": [
-              {
-                "x": 800,
-                "y": 190
-              },
-              {
-                "x": 740,
-                "y": 250
-              }
-            ]
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1754,20 +1755,17 @@
               "cell": "83054582-530f-4220-bee0-c675420bccc2",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": [
-              {
-                "x": 1350,
-                "y": 140
-              },
-              {
-                "x": 1620,
-                "y": 100
-              },
-              {
-                "x": 1620,
-                "y": 230
-              }
-            ]
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1866,12 +1864,12 @@
             },
             "vertices": [
               {
-                "x": 1065,
-                "y": 230
+                "x": 1230,
+                "y": 250
               },
               {
-                "x": 970,
-                "y": 290
+                "x": 1440,
+                "y": 230
               }
             ]
           },
@@ -2590,8 +2588,8 @@
           },
           {
             "position": {
-              "x": 970,
-              "y": 610
+              "x": 1480,
+              "y": 520
             },
             "size": {
               "width": 130,
@@ -2724,8 +2722,8 @@
           },
           {
             "position": {
-              "x": 1230,
-              "y": 620
+              "x": 1350,
+              "y": 640
             },
             "size": {
               "width": 170,
