@@ -1209,160 +1209,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Purchase Request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "806eb453-009e-4337-8363-4621a9ce9fc0",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "21f5baa9-5132-42ce-9687-62f59d71daaf"
-            },
-            "target": {
-              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
-              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Schedule Query",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "366e24b7-d68c-416d-b920-255d6a7e054c",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
-            },
-            "target": {
-              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1960,82 +1806,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "VIP Data & Status Verification",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
-            "source": {
-              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "target": {
-              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -2257,6 +2027,102 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Schedule Update",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "07c0a792-21aa-4148-ac50-71c58e7572b4",
+                  "title": "Disrupted Schedule Updates",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers may disrupt schedule updates in the Database from Live Schedule, preventing real-time updates and confusing attendees.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure schedule update availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "4e89392e-b2d5-4888-aafe-fce889ef5f1e",
+            "source": {
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Attendence Data",
               "description": "",
               "outOfScope": false,
@@ -2294,7 +2160,200 @@
             },
             "target": {
               "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
+              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VIP Data & Status Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f2a29596-bbd6-47d5-8397-75d11a18e1fe",
+                  "title": "Tampered VIP Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers may tamper with VIP data during transmission from VIP Access to Database, allowing unauthorized modifications or fraud, violating MMRs.",
+                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit with HTTPS, and monitor data flows for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
+            "source": {
+              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Purchase Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "027d0216-b5a6-4546-abac-ea94dd521f6a",
+                  "title": "Intercepted Purchase Request",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept purchase requests during transmission from Browser/App to Ticket Purchasing, exposing attendee purchase intentions and risking data breaches, violating MMRs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "806eb453-009e-4337-8363-4621a9ce9fc0",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "21f5baa9-5132-42ce-9687-62f59d71daaf"
+            },
+            "target": {
+              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
             "vertices": []
           },
@@ -2354,7 +2413,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Schedule Update",
+              "name": "Schedule Query",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2365,33 +2424,44 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "07c0a792-21aa-4148-ac50-71c58e7572b4",
-                  "title": "Disrupted Schedule Updates",
+                  "id": "1a74ca29-3a49-4a7d-8914-791ef09ae719",
+                  "title": "Intercepted Schedule Query",
                   "status": "Open",
                   "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Attackers may disrupt schedule updates in the Database from Live Schedule, preventing real-time updates and confusing attendees.",
-                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure schedule update availability.",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept schedule queries during transmission from Browser/App to Live Schedule, exposing event timing and attendee interests, potentially violating MMRs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and monitor traffic for anomalies to prevent interception.",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 29,
-                  "score": "5"
+                  "number": 36,
+                  "score": "6"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
+                "informationDisclosure": 1,
+                "denialOfService": 0
               }
             },
-            "id": "4e89392e-b2d5-4888-aafe-fce889ef5f1e",
+            "id": "366e24b7-d68c-416d-b920-255d6a7e054c",
             "source": {
-              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
             },
             "target": {
-              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -2530,8 +2600,8 @@
           },
           {
             "position": {
-              "x": 400,
-              "y": 580
+              "x": 530,
+              "y": 660
             },
             "size": {
               "width": 130,
@@ -2935,6 +3005,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 33
+    "threatTop": 36
   }
 }
