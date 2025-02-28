@@ -891,6 +891,13 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1195,19 +1202,6 @@
                   "new": false,
                   "number": 23,
                   "score": "4"
-                },
-                {
-                  "id": "8b6219bc-bf66-4e4e-aaa2-12e6c4a05483",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBA",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 32,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
