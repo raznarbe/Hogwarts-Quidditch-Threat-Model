@@ -793,13 +793,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1884,18 +1877,29 @@
               "threats": [
                 {
                   "id": "f27e4edb-e825-4eb9-b6e1-8214de5719e2",
-                  "title": "New STRIDE threat",
+                  "title": "Impersonation of Payment System",
                   "status": "Open",
-                  "severity": "TBA",
+                  "severity": "High",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Attackers may impersonate the third-party Payment System to gain unauthorized access, potentially exposing attendee payment data and violating Magic & Mystics Regulations (MMRs). This could involve spoofing API calls or credentials to extract sensitive financial information.",
+                  "mitigation": "Authenticate Payment System interactions with strong API keys, use HTTPS for all communications, and enforce strict access controls to prevent impersonation. Regular audits of API usage can detect spoofing attempts.",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 7,
-                  "score": ""
+                  "score": "9"
                 }
-              ]
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
