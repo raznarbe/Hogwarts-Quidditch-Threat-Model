@@ -1521,108 +1521,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Payment Data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "49906ce8-f513-4645-b82c-0d336f048de0",
-                  "title": "Intercepted Payment Data",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Attackers may intercept payment data during transmission between Payment System and Ticket Purchasing, risking data breaches and violating Magic & Mystics Regulations (MMRs). This involves eavesdropping on network traffic or exploiting unsecured APIs.",
-                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to detect and prevent interception.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 24,
-                  "score": "8"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "dce02488-4174-4f26-bdbe-3a5aa55f2c26",
-            "source": {
-              "cell": "78fed319-5071-4301-835a-bdfbab2ae5db",
-              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
-            },
-            "target": {
-              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
-              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
-            },
-            "vertices": [
-              {
-                "x": 285,
-                "y": 440
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Check-In Verification",
               "description": "",
               "outOfScope": false,
@@ -2455,9 +2353,111 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "49906ce8-f513-4645-b82c-0d336f048de0",
+                  "title": "Intercepted Payment Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept payment data during transmission between Payment System and Ticket Purchasing, risking data breaches and violating Magic & Mystics Regulations (MMRs). This involves eavesdropping on network traffic or exploiting unsecured APIs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to detect and prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "dce02488-4174-4f26-bdbe-3a5aa55f2c26",
+            "source": {
+              "cell": "78fed319-5071-4301-835a-bdfbab2ae5db",
+              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
+            },
+            "target": {
+              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
+              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
+            },
+            "vertices": [
+              {
+                "x": 285,
+                "y": 440
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 210,
-              "y": 610
+              "x": 260,
+              "y": 70
             },
             "size": {
               "width": 150,
@@ -2590,8 +2590,8 @@
           },
           {
             "position": {
-              "x": 250,
-              "y": 90
+              "x": 970,
+              "y": 610
             },
             "size": {
               "width": 130,
