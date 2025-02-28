@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 910,
-              "y": 340
+              "x": 870,
+              "y": 335
             },
             "size": {
               "width": 160,
@@ -160,8 +160,8 @@
           },
           {
             "position": {
-              "x": 360,
-              "y": 200
+              "x": 380,
+              "y": 340
             },
             "size": {
               "width": 140,
@@ -455,8 +455,8 @@
           },
           {
             "position": {
-              "x": 1130,
-              "y": 350
+              "x": 1140,
+              "y": 335
             },
             "size": {
               "width": 160,
@@ -582,6 +582,19 @@
                   "new": false,
                   "number": 14,
                   "score": "7"
+                },
+                {
+                  "id": "30746a4a-1cf9-458e-a53c-9c7ad1ac77b7",
+                  "title": "Denial of Check-In Service",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Denial of service",
+                  "description": "Attackers may launch a denial-of-service attack, preventing attendees from checking in and disrupting festival operations.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure check-in availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": "5"
                 }
               ],
               "threatFrequency": {
@@ -589,15 +602,15 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 1
               }
             }
           },
           {
             "position": {
-              "x": 1800,
-              "y": 90
+              "x": 1410,
+              "y": 335
             },
             "size": {
               "width": 140,
@@ -882,8 +895,8 @@
           },
           {
             "position": {
-              "x": 1430,
-              "y": 310
+              "x": 1590,
+              "y": 330
             },
             "size": {
               "width": 200,
@@ -1032,19 +1045,12 @@
                 "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": 1700,
-              "y": 550
+              "x": 1310,
+              "y": 600
             },
             "size": {
               "width": 160,
@@ -1176,11 +1182,24 @@
                   "new": false,
                   "number": 20,
                   "score": "9"
+                },
+                {
+                  "id": "f79eeb95-740e-4072-a8ae-be455dfaa14e",
+                  "title": "Repudiation of Data Access",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "Attendees or attackers may deny accessing or modifying data in the Database, complicating accountability and MMR compliance.",
+                  "mitigation": "Log all data access and changes with timestamps and user IDs, and use digital signatures to ensure non-repudiation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": "4"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
@@ -1217,7 +1236,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1294,7 +1313,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1371,7 +1390,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1447,7 +1466,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1497,82 +1516,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Ad Display/Ap Ads",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Ad Display/Ap Ads",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "55f46677-2c22-4768-971f-d82cfadf06d2",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
-            },
-            "target": {
-              "cell": "83054582-530f-4220-bee0-c675420bccc2",
-              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1601,7 +1544,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1711,7 +1654,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1808,7 +1751,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1905,7 +1848,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Ad Display/Ap Ads",
+                    "text": "VIP Data & Status Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1969,6 +1912,168 @@
               "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "VIP Data & Status Verification",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ad Display/Ap Ads",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "55f46677-2c22-4768-971f-d82cfadf06d2",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
+            },
+            "target": {
+              "cell": "83054582-530f-4220-bee0-c675420bccc2",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
+            },
+            "vertices": [
+              {
+                "x": 1360,
+                "y": 210
+              },
+              {
+                "x": 1630,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "VIP Data & Status Verification",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VIP Data & Status Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d55d5502-4ecf-4861-82ed-a3e6180d70f7",
+            "source": {
+              "cell": "df36f856-499b-4bd6-b580-086a4630028a",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
+            }
           },
           {
             "position": {
@@ -2106,8 +2211,8 @@
           },
           {
             "position": {
-              "x": 1240,
-              "y": 620
+              "x": 1055,
+              "y": 610
             },
             "size": {
               "width": 130,
@@ -2374,8 +2479,8 @@
           },
           {
             "position": {
-              "x": 860,
-              "y": 59.99999999999996
+              "x": 1000,
+              "y": 40
             },
             "size": {
               "width": 210,
@@ -2511,6 +2616,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 21
+    "threatTop": 23
   }
 }
