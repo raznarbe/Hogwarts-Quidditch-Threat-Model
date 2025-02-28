@@ -19,6 +19,91 @@
         "cells": [
           {
             "position": {
+              "x": 915,
+              "y": 20.000000000000156
+            },
+            "size": {
+              "width": 300,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": ""
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "d10c1e39-7978-4be5-b509-3091407cec08",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 465,
+              "y": 225
+            },
+            "size": {
+              "width": 230,
+              "height": 210
+            },
+            "attrs": {
+              "label": {
+                "text": ""
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "acfce210-1c3c-4ccd-b3c8-cb68bea13d5f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1495,
+              "y": 270
+            },
+            "size": {
+              "width": 240,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": ""
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "f59a19cb-6597-4488-b18c-c56d515289f7",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
               "x": 1825,
               "y": 295
             },
@@ -1792,184 +1877,15 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Check-In Request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "e7c2b3c1-91ff-4958-833b-f32e9018ea9a",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
-            },
-            "target": {
-              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
-              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Schedule Update",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User Profile/Data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "db3f5038-7d22-4ba1-8232-330f62db901a",
-                  "title": "Leaked Profile Data in Storage",
-                  "status": "Open",
-                  "severity": "TBA",
-                  "type": "Information disclosure",
-                  "description": "Attackers may access or leak user profile data stored in the Database from Community Aspect, violating MMRs and risking privacy.",
-                  "mitigation": "Encrypt data at rest and in transit, enforce strict access controls, and allow users to delete data via a ‘Right to Delete’ feature per MMRs.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 26,
-                  "score": "8"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "ba07a52d-7e70-4035-acbc-9dc1b2e46da2",
-            "source": {
-              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
-              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
-            },
-            "target": {
-              "cell": "95060f6c-8e49-4617-b55d-82f620bd7586",
-              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -2452,17 +2368,201 @@
               "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Profile/Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "db3f5038-7d22-4ba1-8232-330f62db901a",
+                  "title": "Leaked Profile Data in Storage",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Information disclosure",
+                  "description": "Attackers may access or leak user profile data stored in the Database from Community Aspect, violating MMRs and risking privacy.",
+                  "mitigation": "Encrypt data at rest and in transit, enforce strict access controls, and allow users to delete data via a ‘Right to Delete’ feature per MMRs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "8"
+                }
               ],
-              "name": null
-            }
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "ba07a52d-7e70-4035-acbc-9dc1b2e46da2",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "6055c9b7-a4de-4460-8775-ed0f4117d147"
+            },
+            "target": {
+              "cell": "95060f6c-8e49-4617-b55d-82f620bd7586",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Schedule Update",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Check-In Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8fe8f039-2211-4e92-a969-a59441977e93",
+                  "title": "Intercepted Check-In Request",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may intercept check-in requests during transmission from Browser/App to Event Check-In, exposing attendee locations or attendance status, violating MMRs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to prevent interception.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "e7c2b3c1-91ff-4958-833b-f32e9018ea9a",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
+            },
+            "target": {
+              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -3005,6 +3105,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 36
+    "threatTop": 37
   }
 }
