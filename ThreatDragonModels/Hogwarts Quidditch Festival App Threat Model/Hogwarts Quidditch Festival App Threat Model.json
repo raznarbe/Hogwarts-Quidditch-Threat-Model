@@ -31,8 +31,8 @@
                 "text": "Community Aspect"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,12 +128,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "02b3769a-3f0f-4a20-9d72-daef9b0e12c5",
+                  "title": "Leaked User Profiles",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Attackers may access or leak user profile data in the Community Aspect, exposing sensitive information and violating MMRs.",
+                  "mitigation": "Encrypt communications with HTTPS, enforce strict access controls, and allow users to delete data via a ‘Right to Delete’ feature per MMRs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -265,6 +287,19 @@
                   "new": false,
                   "number": 2,
                   "score": "8"
+                },
+                {
+                  "id": "6788c580-7645-4b05-a2db-445337a3a305",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 12,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -396,21 +431,21 @@
               "threats": [
                 {
                   "id": "3f8b6d77-8a9d-4682-b16e-b2e1f8850254",
-                  "title": "Altered Schedules",
+                  "title": "Altered Schedule Data",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Use integrity checks (e.g., hashes) and encrypt data in transit.",
+                  "description": "Attackers may alter live schedule data in the app, disrupting event planning and attendee experience, potentially violating MMRs.",
+                  "mitigation": "Use integrity checks (e.g., hashes), encrypt data in transit, and restrict access to authorized personnel only.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
-                  "score": ""
+                  "score": "6"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -432,8 +467,8 @@
                 "text": "Event Check-In"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -529,12 +564,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a9b604d3-f55b-456b-84a9-2d93027ad585",
+                  "title": "Unauthorized Event Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers may gain unauthorized access to events by elevating privileges during check-in, bypassing security and violating MMRs.",
+                  "mitigation": "Use secure authentication (e.g., magical tokens, MFA), verify check-ins with Security Agencies in real-time, and restrict access with role checks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "7"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -551,8 +608,8 @@
                 "text": "VIP Access"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -648,12 +705,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2afe0050-a748-4fc1-b980-0253cb8c4ad3",
+                  "title": "Unauthorized VIP Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attackers may gain unauthorized VIP access, allowing premium features without payment and violating MMRs.",
+                  "mitigation": "Restrict access with strong authentication, role checks, and physical/magical tokens. Encrypt VIP data and monitor access logs.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -809,8 +888,8 @@
                 "text": "Sponsor Advertising"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -906,12 +985,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "96049f03-a30d-40c0-8976-b50f8cfbbea8",
+                  "title": "Unavailability of Ads",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers may launch a denial-of-service attack, making sponsor ads unavailable and disrupting revenue streams.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection services to ensure ad availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "4"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2161,13 +2262,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2309,6 +2403,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 16
   }
 }
