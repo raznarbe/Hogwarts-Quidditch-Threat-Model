@@ -1736,8 +1736,8 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "Attackers may intercept payment data during transmission between Payment System and Ticket Purchasing, risking data breaches.",
-                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems.",
+                  "description": "Attackers may intercept payment data during transmission between Payment System and Ticket Purchasing, risking data breaches and violating Magic & Mystics Regulations (MMRs). This involves eavesdropping on network traffic or exploiting unsecured APIs.",
+                  "mitigation": "Encrypt data in transit with HTTPS, use secure APIs, and implement intrusion detection systems to detect and prevent interception.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -1746,7 +1746,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 4,
+                "informationDisclosure": 5,
                 "denialOfService": 0
               }
             },
@@ -1759,7 +1759,17 @@
               "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
               "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1893,13 +1903,6 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
