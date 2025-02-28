@@ -279,8 +279,8 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 630
+              "x": 350,
+              "y": 565
             },
             "size": {
               "width": 190,
@@ -1573,103 +1573,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Check-In Verification",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "87e7bf5b-8caf-48dc-bb69-b68de2394bd1",
-                  "title": "Tampered Check-In Verification",
-                  "status": "Open",
-                  "severity": "TBA",
-                  "type": "Tampering",
-                  "description": "Attackers may tamper with check-in verification data between Security Agencies and Event Check-In, allowing unauthorized access or false attendance records.",
-                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit, and monitor data flows for anomalies.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "id": "d663d28c-56e8-4b78-a620-5c1425dbf833",
-            "source": {
-              "cell": "2745969e-9831-4ed2-bfef-2e01fb29ea89",
-              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
-            },
-            "target": {
-              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Vendor Data",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Ticket Data",
               "description": "",
               "outOfScope": false,
@@ -1709,7 +1612,20 @@
               "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
               "port": "af0f438e-1a25-4f05-984d-bf63c29a11b4"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 650,
+                "y": 510
+              },
+              {
+                "x": 840,
+                "y": 550
+              },
+              {
+                "x": 880,
+                "y": 685
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1808,110 +1724,14 @@
             },
             "vertices": [
               {
-                "x": 280,
-                "y": 280
+                "x": 335,
+                "y": 250
               },
               {
-                "x": 350,
-                "y": 370
+                "x": 410,
+                "y": 300
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Vendor Data",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Schedule Update",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "07c0a792-21aa-4148-ac50-71c58e7572b4",
-                  "title": "Disrupted Schedule Updates",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Attackers may disrupt schedule updates in the Database from Live Schedule, preventing real-time updates and confusing attendees.",
-                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure schedule update availability.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 29,
-                  "score": "5"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "id": "4e89392e-b2d5-4888-aafe-fce889ef5f1e",
-            "source": {
-              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
-            },
-            "target": {
-              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
-              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
-            }
           },
           {
             "shape": "flow",
@@ -2008,7 +1828,16 @@
               "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
               "port": "65f3694e-cc6b-4dff-bf94-59690b4b30f8"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1070,
+                "y": 480
+              },
+              {
+                "x": 1030,
+                "y": 560
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2201,7 +2030,16 @@
               "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 810,
+                "y": 170
+              },
+              {
+                "x": 610,
+                "y": 130
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2298,7 +2136,16 @@
               "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
               "port": "f498c551-91bd-4941-a642-84c0ee53a652"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1250,
+                "y": 230
+              },
+              {
+                "x": 1560,
+                "y": 210
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2397,8 +2244,8 @@
             },
             "vertices": [
               {
-                "x": 1500,
-                "y": 140
+                "x": 1350,
+                "y": 130
               },
               {
                 "x": 1830,
@@ -2600,12 +2447,12 @@
             },
             "vertices": [
               {
-                "x": 1460,
-                "y": 30
+                "x": 1450,
+                "y": 10
               },
               {
-                "x": 1700,
-                "y": 110
+                "x": 1720,
+                "y": 140
               }
             ]
           },
@@ -2835,6 +2682,222 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Check-In Verification",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "87e7bf5b-8caf-48dc-bb69-b68de2394bd1",
+                  "title": "Tampered Check-In Verification",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Attackers may tamper with check-in verification data between Security Agencies and Event Check-In, allowing unauthorized access or false attendance records.",
+                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit, and monitor data flows for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "id": "d663d28c-56e8-4b78-a620-5c1425dbf833",
+            "source": {
+              "cell": "2745969e-9831-4ed2-bfef-2e01fb29ea89",
+              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
+            },
+            "target": {
+              "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
+              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 650
+              },
+              {
+                "x": 740,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Vendor Data",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Schedule Update",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "07c0a792-21aa-4148-ac50-71c58e7572b4",
+                  "title": "Disrupted Schedule Updates",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers may disrupt schedule updates in the Database from Live Schedule, preventing real-time updates and confusing attendees.",
+                  "mitigation": "Use load balancing, redundancy, and DDoS protection to ensure schedule update availability.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": "5"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "id": "4e89392e-b2d5-4888-aafe-fce889ef5f1e",
+            "source": {
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
+            },
+            "target": {
+              "cell": "e6e3cc9f-7e69-4d5a-9f7d-0d0e244efeed",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+            },
+            "vertices": [
+              {
+                "x": 1470,
+                "y": 420
+              },
+              {
+                "x": 1440,
+                "y": 510
+              },
+              {
+                "x": 1440,
+                "y": 660
+              }
+            ]
+          },
+          {
             "position": {
               "x": 260,
               "y": 70
@@ -2970,8 +3033,8 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": 660
+              "x": 380,
+              "y": 590
             },
             "size": {
               "width": 130,
