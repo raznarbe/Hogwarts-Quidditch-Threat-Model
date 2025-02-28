@@ -138,8 +138,8 @@
           },
           {
             "position": {
-              "x": 380,
-              "y": 370
+              "x": 390,
+              "y": 320
             },
             "size": {
               "width": 120,
@@ -376,8 +376,8 @@
           },
           {
             "position": {
-              "x": 400,
-              "y": 190
+              "x": 620,
+              "y": 265
             },
             "size": {
               "width": 130,
@@ -495,8 +495,8 @@
           },
           {
             "position": {
-              "x": 750,
-              "y": 80
+              "x": 500,
+              "y": 30
             },
             "size": {
               "width": 110,
@@ -986,88 +986,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "labels": [
-              {
-                "markup": [
-                  {
-                    "tagName": "ellipse",
-                    "selector": "labelBody"
-                  },
-                  {
-                    "tagName": "text",
-                    "selector": "labelText"
-                  }
-                ],
-                "attrs": {
-                  "labelText": {
-                    "text": "Event Details",
-                    "textAnchor": "middle",
-                    "textVerticalAnchor": "middle"
-                  },
-                  "labelBody": {
-                    "ref": "labelText",
-                    "refRx": "50%",
-                    "refRy": "60%",
-                    "fill": "#fff",
-                    "strokeWidth": 0
-                  }
-                },
-                "position": {
-                  "distance": 0.5,
-                  "args": {
-                    "keepGradient": true,
-                    "ensureLegibility": true
-                  }
-                }
-              }
-            ],
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Payment Data",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "690be989-bebd-4e16-88a1-23d557ee46a7",
-            "source": {
-              "cell": "78fed319-5071-4301-835a-bdfbab2ae5db",
-              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
-            },
-            "target": {
-              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
-              "port": "0718d7ab-7247-46a1-a25f-3aafe0dac49b"
-            },
-            "vertices": [
-              {
-                "x": 300,
-                "y": 450
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -1090,7 +1008,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Event Details",
+                    "text": "Purchase Request",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1136,8 +1054,8 @@
             },
             "vertices": [
               {
-                "x": 290,
-                "y": 230
+                "x": 540,
+                "y": 240
               }
             ]
           },
@@ -1172,7 +1090,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Event Details",
+                    "text": "Purchase Request",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1258,7 +1176,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Event Details",
+                    "text": "Purchase Request",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1310,9 +1228,181 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Purchase Request",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Purchase Request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "806eb453-009e-4337-8363-4621a9ce9fc0",
+            "source": {
+              "cell": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+              "port": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
+            },
+            "target": {
+              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
+              "port": "f498c551-91bd-4941-a642-84c0ee53a652"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 270
+              },
+              {
+                "x": 430,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Purchase Request",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payment Data",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "690be989-bebd-4e16-88a1-23d557ee46a7",
+            "source": {
+              "cell": "78fed319-5071-4301-835a-bdfbab2ae5db",
+              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
+            },
+            "target": {
+              "cell": "44937f62-3ee0-4885-b7a2-50b72e122a3f",
+              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 490
+              },
+              {
+                "x": 430,
+                "y": 550
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 170,
-              "y": 560
+              "x": 210,
+              "y": 610
             },
             "size": {
               "width": 150,
@@ -1427,7 +1517,7 @@
           },
           {
             "position": {
-              "x": 190,
+              "x": 695,
               "y": 50
             },
             "size": {
@@ -1649,6 +1739,122 @@
             "data": {
               "type": "tm.Actor",
               "name": "External Data Providers",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 220,
+              "y": 70
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Browser/APP"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "50f2174a-3cc1-4405-846a-a68e1d221829"
+                },
+                {
+                  "group": "right",
+                  "id": "6055c9b7-a4de-4460-8775-ed0f4117d147"
+                },
+                {
+                  "group": "bottom",
+                  "id": "7bb35210-cfb8-4305-84d3-b7c016ee9b55"
+                },
+                {
+                  "group": "left",
+                  "id": "21f5baa9-5132-42ce-9687-62f59d71daaf"
+                }
+              ]
+            },
+            "id": "6e2b92fa-ee64-4eb9-9d72-f190196d668f",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Browser/APP",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
