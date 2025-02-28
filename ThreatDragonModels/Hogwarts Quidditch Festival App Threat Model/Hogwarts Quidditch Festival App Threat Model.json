@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 1368,
-              "y": 90
+              "x": 860,
+              "y": 250
             },
             "size": {
               "width": 160,
@@ -495,8 +495,8 @@
           },
           {
             "position": {
-              "x": 1150,
-              "y": 50
+              "x": 750,
+              "y": 80
             },
             "size": {
               "width": 110,
@@ -737,8 +737,8 @@
           },
           {
             "position": {
-              "x": 1680,
-              "y": 100
+              "x": 1040,
+              "y": 80
             },
             "size": {
               "width": 200,
@@ -1008,7 +1008,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Check-In Verification",
+                    "text": "Event Details",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1090,7 +1090,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Check-In Verification",
+                    "text": "Event Details",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1172,7 +1172,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Check-In Verification",
+                    "text": "Event Details",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1196,7 +1196,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Vendor Data",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1207,19 +1207,23 @@
               "protocol": "",
               "threats": []
             },
-            "id": "0a971dc1-3263-47f4-a20a-1dcec0321f4a",
+            "id": "c3f2ce5c-21cb-4123-97ae-1741dfe31fd5",
             "source": {
               "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
-              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
+              "port": "21f5baa9-5132-42ce-9687-62f59d71daaf"
             },
             "target": {
-              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "1640fb7a-1cf4-48bc-a3d4-b5317a45d777"
+              "cell": "ed7cf80d-7b43-4d14-886f-24fa0c6182d2",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
             },
             "vertices": [
               {
-                "x": 1540,
-                "y": 420
+                "x": 1270,
+                "y": 660
+              },
+              {
+                "x": 1200,
+                "y": 555
               }
             ]
           },
@@ -1254,7 +1258,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Check-In Verification",
+                    "text": "Event Details",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1278,7 +1282,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Event Details",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1289,19 +1293,19 @@
               "protocol": "",
               "threats": []
             },
-            "id": "c3f2ce5c-21cb-4123-97ae-1741dfe31fd5",
+            "id": "0a971dc1-3263-47f4-a20a-1dcec0321f4a",
             "source": {
               "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
-              "port": "21f5baa9-5132-42ce-9687-62f59d71daaf"
+              "port": "50f2174a-3cc1-4405-846a-a68e1d221829"
             },
             "target": {
-              "cell": "ed7cf80d-7b43-4d14-886f-24fa0c6182d2",
-              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+              "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
+              "port": "1640fb7a-1cf4-48bc-a3d4-b5317a45d777"
             },
             "vertices": [
               {
-                "x": 1230,
-                "y": 640
+                "x": 1540,
+                "y": 420
               }
             ]
           },
