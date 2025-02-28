@@ -1789,7 +1789,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1844,12 +1845,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "87e7bf5b-8caf-48dc-bb69-b68de2394bd1",
+                  "title": "Tampered Check-In Verification",
+                  "status": "Open",
+                  "severity": "TBA",
+                  "type": "Tampering",
+                  "description": "Attackers may tamper with check-in verification data between Security Agencies and Event Check-In, allowing unauthorized access or false attendance records.",
+                  "mitigation": "Use integrity checks (e.g., digital signatures), encrypt data in transit, and monitor data flows for anomalies.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "id": "d663d28c-56e8-4b78-a620-5c1425dbf833",
             "source": {
@@ -1860,7 +1880,17 @@
               "cell": "4b2f8362-96f8-4ec6-8eeb-6f283fe053aa",
               "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -2403,6 +2433,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
