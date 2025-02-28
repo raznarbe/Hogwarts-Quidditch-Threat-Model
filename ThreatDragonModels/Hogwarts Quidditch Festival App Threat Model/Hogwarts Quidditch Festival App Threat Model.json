@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 1040,
-              "y": 270
+              "x": 1368,
+              "y": 90
             },
             "size": {
               "width": 160,
@@ -257,8 +257,8 @@
           },
           {
             "position": {
-              "x": 590,
-              "y": 320
+              "x": 1328,
+              "y": 300
             },
             "size": {
               "width": 140,
@@ -495,8 +495,8 @@
           },
           {
             "position": {
-              "x": 920,
-              "y": 90
+              "x": 1150,
+              "y": 50
             },
             "size": {
               "width": 110,
@@ -614,12 +614,12 @@
           },
           {
             "position": {
-              "x": 1030,
-              "y": 560
+              "x": 970,
+              "y": 510
             },
             "size": {
-              "width": 130,
-              "height": 70
+              "width": 150,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -737,8 +737,8 @@
           },
           {
             "position": {
-              "x": 770,
-              "y": 270
+              "x": 1680,
+              "y": 100
             },
             "size": {
               "width": 200,
@@ -856,12 +856,12 @@
           },
           {
             "position": {
-              "x": 1608,
-              "y": 140
+              "x": 640,
+              "y": 510
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 160,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -986,7 +986,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -1008,7 +1008,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Check-In Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1032,12 +1032,12 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Payment Data",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
@@ -1090,7 +1090,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Check-In Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1114,7 +1114,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Check-In Verification",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1172,7 +1172,7 @@
                 ],
                 "attrs": {
                   "labelText": {
-                    "text": "Data Flow",
+                    "text": "Check-In Verification",
                     "textAnchor": "middle",
                     "textVerticalAnchor": "middle"
                   },
@@ -1214,12 +1214,94 @@
             },
             "target": {
               "cell": "23307e79-dfdf-4b14-a92c-88a101fea618",
-              "port": "0ad896fc-5ff8-44da-b324-51201da4481b"
+              "port": "1640fb7a-1cf4-48bc-a3d4-b5317a45d777"
             },
             "vertices": [
               {
-                "x": 660,
-                "y": 530
+                "x": 1540,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "labels": [
+              {
+                "markup": [
+                  {
+                    "tagName": "ellipse",
+                    "selector": "labelBody"
+                  },
+                  {
+                    "tagName": "text",
+                    "selector": "labelText"
+                  }
+                ],
+                "attrs": {
+                  "labelText": {
+                    "text": "Check-In Verification",
+                    "textAnchor": "middle",
+                    "textVerticalAnchor": "middle"
+                  },
+                  "labelBody": {
+                    "ref": "labelText",
+                    "refRx": "50%",
+                    "refRy": "60%",
+                    "fill": "#fff",
+                    "strokeWidth": 0
+                  }
+                },
+                "position": {
+                  "distance": 0.5,
+                  "args": {
+                    "keepGradient": true,
+                    "ensureLegibility": true
+                  }
+                }
+              }
+            ],
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "c3f2ce5c-21cb-4123-97ae-1741dfe31fd5",
+            "source": {
+              "cell": "3f1e9e8b-ee50-469b-a5a8-92d50077aee2",
+              "port": "21f5baa9-5132-42ce-9687-62f59d71daaf"
+            },
+            "target": {
+              "cell": "ed7cf80d-7b43-4d14-886f-24fa0c6182d2",
+              "port": "5277eb01-0295-4681-a92c-bcbe2c43329e"
+            },
+            "vertices": [
+              {
+                "x": 1230,
+                "y": 640
               }
             ]
           },
@@ -1457,8 +1539,8 @@
           },
           {
             "position": {
-              "x": 540,
-              "y": 600
+              "x": 1363,
+              "y": 580
             },
             "size": {
               "width": 170,
